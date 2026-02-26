@@ -1,7 +1,13 @@
 package opp_00000120768_juliansanjaya.week03
 
-fun main(){
+fun main() {
     val e = Employee("Budi")
-    println("--- Test Error ---")
-    e.salary = 5000
+
+    e.salary = -1000
+    e.salary = 5000000
+    println("Gaji: ${e.salary}")
+
+    e.increasePerformance()
+
+    println("Pajak yang harus dibayar: ${e.tax}")
 }
