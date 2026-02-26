@@ -7,7 +7,6 @@ class Weapon(val name: String, damage: Int) {
             when {
                 value < 0 -> {
                     println("Warning: Damage tidak boleh negatif! Nilai tidak diubah.")
-                    // field tidak diubah
                 }
                 value > 1000 -> {
                     field = 1000
