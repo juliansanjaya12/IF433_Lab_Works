@@ -12,12 +12,28 @@ package opp_00000120768_juliansanjaya.week03
 }*/
 
 fun main() {
+
+    println("=== TEST WEAPON ===")
     val w = Weapon("Excalibur", 100)
 
+    println("Damage awal: ${w.damage}")
+    println("Tier awal: ${w.tier}")
+
     w.damage = -50
+    println("Damage setelah set -50: ${w.damage}")
 
     w.damage = 9999
-
-    println("Damage akhir: ${w.damage}")
+    println("Damage setelah set 9999: ${w.damage}")
     println("Tier senjata: ${w.tier}")
+
+    println()
+    println("=== TEST PLAYER ===")
+
+    val player = Player("Budi")
+
+    player.addXp(50)
+    println("Level sekarang: ${player.level}")
+
+    player.addXp(60)
+    println("Level sekarang: ${player.level}")
 }
