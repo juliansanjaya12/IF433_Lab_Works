@@ -42,3 +42,24 @@ package opp_00000120768_juliansanjaya.week05
 
 }*/
 
+fun main() {
+
+    val ewallet = EWallet("Julian", 50000.0)
+    val creditCard = CreditCard("Julian", 100000.0)
+
+    val paymentMethods: List<PaymentMethod> = listOf(
+        ewallet,
+        creditCard
+    )
+
+    println("=== PROSES PEMBAYARAN ===")
+
+    for (payment in paymentMethods) {
+
+        println("Metode pembayaran: ${payment.accountName}")
+        payment.processPayment(75000.0)
+
+        println("----------------------")
+    }
+
+}
