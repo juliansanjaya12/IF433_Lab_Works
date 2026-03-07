@@ -24,7 +24,7 @@ package opp_00000120768_juliansanjaya.week05
     }
 }*/
 
-fun main(){
+/*fun main(){
 
     val mathHelper = MathHelper()
 
@@ -40,4 +40,5 @@ fun main(){
     val luasLingkaran = mathHelper.hitungLuas(7.0)
     println("Luas Lingkaran (r = 7.0): $luasLingkaran")
 
-}
+}*/
+
