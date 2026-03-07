@@ -53,13 +53,20 @@ fun main() {
     )
 
     println("=== PROSES PEMBAYARAN ===")
-
     for (payment in paymentMethods) {
 
         println("Metode pembayaran: ${payment.accountName}")
+
         payment.processPayment(75000.0)
 
+        if (payment is EWallet) {
+            println("Top up otomatis untuk EWallet...")
+
+            payment.topUp(50000.0)
+
+            println("Mencoba pembayaran lagi...")
+            payment.processPayment(75000.0)
+        }
         println("----------------------")
     }
-
 }
