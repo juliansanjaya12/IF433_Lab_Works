@@ -1,7 +1,5 @@
 package opp_00000120768_juliansanjaya.week03
 
-package opp_00000120768_juliansanjaya.week03
-
 class Player(val username: String) {
 
     private var xp: Int = 0

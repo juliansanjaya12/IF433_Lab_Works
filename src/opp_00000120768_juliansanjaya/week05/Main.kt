@@ -1,6 +1,6 @@
 package opp_00000120768_juliansanjaya.week05
 
-fun main(){
+/*fun main(){
     val dosen1 = Dosen("Pak Alex", "0123456")
     val admin1 = Admin("Bu Siti")
 
@@ -22,4 +22,22 @@ fun main(){
         }
         println("----------------------------")
     }
+}*/
+
+fun main(){
+
+    val mathHelper = MathHelper()
+
+    // Luas Persegi
+    val luasPersegi = mathHelper.hitungLuas(4)
+    println("Luas Persegi (sisi = 4): $luasPersegi")
+
+    // Luas Persegi Panjang
+    val luasPersegiPanjang = mathHelper.hitungLuas(6, 3)
+    println("Luas Persegi Panjang (6 x 3): $luasPersegiPanjang")
+
+    // Luas Lingkaran
+    val luasLingkaran = mathHelper.hitungLuas(7.0)
+    println("Luas Lingkaran (r = 7.0): $luasLingkaran")
+
 }

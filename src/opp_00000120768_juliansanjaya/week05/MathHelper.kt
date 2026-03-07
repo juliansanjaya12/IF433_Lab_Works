@@ -1,7 +1,5 @@
 package opp_00000120768_juliansanjaya.week05
 
-package opp_00000120768_juliansanjaya.week05
-
 class MathHelper {
     // Luas Persegi
     fun hitungLuas(sisi: Int): Int {
