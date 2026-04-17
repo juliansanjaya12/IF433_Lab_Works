@@ -10,9 +10,9 @@ fun main(){
     client.connect()
 
     println("\n=== TEST REGULAR CLASS ===")
-    val reg1 = RegularUser("Alice", 22)
-    val reg2 = RegularUser("Alice", 22)
-    println(reg1)
+    val req1 = RegularUser("Alice", 22)
+    val req2 = RegularUser("Alice", 22)
+    println(req1)
     println("Sama? ${req1 == req2}")
 
     println("\n=== TEST DATA CLASS ===")
