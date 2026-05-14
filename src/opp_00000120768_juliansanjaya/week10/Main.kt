@@ -1,4 +1,4 @@
-package opp_00000120768_juliansanjaya.week09
+package opp_00000120768_juliansanjaya.week10
 
 fun main() {
     println("=== TEST GENERIC CLASS ===")
