@@ -1,6 +1,10 @@
 package opp_00000120768_juliansanjaya.week10
 
-class WalletRepository<T> {
+interface HasName {
+    val name: String
+}
+
+class WalletRepository<T : Any> {
 
     private val items = mutableListOf<T>()
 
@@ -10,5 +14,11 @@ class WalletRepository<T> {
 
     fun getAll(): List<T> {
         return items
+    }
+
+    fun findByName(name: String): List<T> {
+        return items.filter {
+            it is HasName && it.name == name
+        }
     }
 }
